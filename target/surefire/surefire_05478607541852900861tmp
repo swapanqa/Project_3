@@ -1,6 +1,0 @@
-#surefire_0
-#Fri May 18 13:04:43 EDT 2018
-user.dir=C\:\\Users\\DEBAJYOTI007\\Desktop\\SSMB4_Scripts\\New\\SSMB5\\LordNTaylor
-cucumber.options=--tags @functional --tags @smoke
-localRepository=C\:\\Users\\DEBAJYOTI007\\.m2\\repository
-basedir=C\:\\Users\\DEBAJYOTI007\\Desktop\\SSMB4_Scripts\\New\\SSMB5\\LordNTaylor
