@@ -1,0 +1,6 @@
+#surefire_0
+#Fri May 18 19:28:38 EDT 2018
+user.dir=C\:\\Users\\debaj\\Desktop\\Selenium_Practice\\Project_New\\LordNTaylor
+cucumber.options=--tags @functional --tags @smoke
+localRepository=C\:\\Users\\debaj\\.m2\\repository
+basedir=C\:\\Users\\debaj\\Desktop\\Selenium_Practice\\Project_New\\LordNTaylor

@@ -1,0 +1,19 @@
+Feature: Lord and Taylor Shopping Bag Page and Add To Cart Functionality
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify that shopping cart pop up shows the same product related details after adding the item [90m# addToCartFunctionality.feature:18[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                                                                           [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mThen [0m[32mUser should see the following product related details in the pop up box[0m                             [90m# AddToCartSteps.user_should_see_the_following_product_related_details_in_the_pop_up_box(DataTable)[0m
