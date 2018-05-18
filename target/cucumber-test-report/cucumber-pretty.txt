@@ -1,0 +1,1443 @@
+Feature: Lord and Taylor Shopping Bag Page and Add To Cart Functionality
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify that shopping cart pop up shows the same product related details after adding the item [90m# addToCartFunctionality.feature:18[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                                                                           [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mThen [0m[32mUser should see the following product related details in the pop up box[0m                             [90m# AddToCartSteps.user_should_see_the_following_product_related_details_in_the_pop_up_box(DataTable)[0m
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 7. Verify the remove item functionality in the shopping bag page [90m# addToCartFunctionality.feature:67[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                                           [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                                [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+    [32mThen [0m[32mShopping Bag page should display[0m                                    [90m# AddToCartSteps.shopping_Bag_page_should_display()[0m
+    [32mWhen [0m[32mUser clicks the remove item link[0m                                    [90m# AddToCartSteps.user_clicks_the_remove_item_link()[0m
+    [32mAnd [0m[32mClicks on the confirm remove item link[0m                               [90m# AddToCartSteps.clicks_on_the_confirm_remove_item_link()[0m
+    [32mThen [0m[32mUser should see that the item has been removed[0m                      [90m# AddToCartSteps.user_should_see_that_the_item_has_been_removed()[0m
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11004, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: e7abdd6c-6678-4999-aaba-c4131e1fd93e
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(addToCartFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [36mAnd [0m[36mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [36mThen [0m[36mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [36mWhen [0m[36mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [36mThen [0m[36mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [36mWhen [0m[36mUser click on "[0m[36m[1mMica Blue[0m[36m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [36mAnd [0m[36mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 12. Verify Paypal checkout button [90m# addToCartFunctionality.feature:120[0m
+    [36mAnd [0m[36mClick on Add To Bag Button[0m            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [36mWhen [0m[36mUser click on the View My Bag button[0m [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+    [36mThen [0m[36mShopping Bag page should display[0m     [90m# AddToCartSteps.shopping_Bag_page_should_display()[0m
+    [36mWhen [0m[36mUser enter zipcode as "[0m[36m[1m11435[0m[36m"[0m        [90m# AddToCartSteps.user_enter_zipcode_as(String)[0m
+    [36mAnd [0m[36mClick on shipping method dropdown[0m     [90m# AddToCartSteps.click_on_shipping_method_dropdown()[0m
+    [36mAnd [0m[36mSelects "[0m[36m[1mRush[0m[36m" as the shipping method[0m [90m# AddToCartSteps.selects_as_the_shipping_method(String)[0m
+    [36mAnd [0m[36mClick on the paypal checkout button[0m   [90m# AddToCartSteps.click_on_the_paypal_checkout_button()[0m
+    [36mThen [0m[36mPaypal checkout page should open[0m     [90m# AddToCartSteps.paypal_checkout_page_should_open()[0m
+Feature: Lord and Taylor Shopping Bag Page and Add To Cart Functionality
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify that shopping cart pop up shows the same product related details after adding the item [90m# addToCartFunctionality.feature:18[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                                                                           [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mThen [0m[32mUser should see the following product related details in the pop up box[0m                             [90m# AddToCartSteps.user_should_see_the_following_product_related_details_in_the_pop_up_box(DataTable)[0m
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 7. Verify the remove item functionality in the shopping bag page [90m# addToCartFunctionality.feature:67[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                                           [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                                [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+    [32mThen [0m[32mShopping Bag page should display[0m                                    [90m# AddToCartSteps.shopping_Bag_page_should_display()[0m
+    [32mWhen [0m[32mUser clicks the remove item link[0m                                    [90m# AddToCartSteps.user_clicks_the_remove_item_link()[0m
+    [32mAnd [0m[32mClicks on the confirm remove item link[0m                               [90m# AddToCartSteps.clicks_on_the_confirm_remove_item_link()[0m
+    [32mThen [0m[32mUser should see that the item has been removed[0m                      [90m# AddToCartSteps.user_should_see_that_the_item_has_been_removed()[0m
+
+  Background:                                                              [90m# addToCartFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Shopping Cart Page and Add To Cart Functionality[0m [90m# AddToCartSteps.not_a_validated_Shopping_Cart_Page_and_Add_To_Cart_Functionality()[0m
+    [31mWhen [0m[31mUser browse to the site[0m                                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+      [31morg.openqa.selenium.TimeoutException: Timeout loading page after 60000ms
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 9636, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 8c4b62c2-52a2-4373-a5f6-426b61278b8d
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+      	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:912)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.navigateToApplication(PageBaseMethods.java:24)
+      	at com.lordAndTaylor.qa.scripts.steps.ApplicationSteps.user_browse_to_the_site(ApplicationSteps.java:24)
+      	at ✽.When User browse to the site(addToCartFunctionality.feature:5)
+      [0m
+    [36mAnd [0m[36mCloses the Popup window[0m                                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m                           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser hover over the men section in navigation bar[0m                 [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [36mAnd [0m[36mUser click on the Nike Link[0m                                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [36mThen [0m[36mNike products page should display[0m                                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [36mWhen [0m[36mUser click on Nike Hydroguard Mica Top product image[0m              [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [36mThen [0m[36mHydroguard Mica Top Product page should display[0m                   [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [36mWhen [0m[36mUser click on "[0m[36m[1mMica Blue[0m[36m" color option[0m                            [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [36mAnd [0m[36mSelects Large as the size[0m                                          [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+
+  @functional @smoke
+  Scenario: 12. Verify Paypal checkout button [90m# addToCartFunctionality.feature:120[0m
+    [36mAnd [0m[36mClick on Add To Bag Button[0m            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [36mWhen [0m[36mUser click on the View My Bag button[0m [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+    [36mThen [0m[36mShopping Bag page should display[0m     [90m# AddToCartSteps.shopping_Bag_page_should_display()[0m
+    [36mWhen [0m[36mUser enter zipcode as "[0m[36m[1m11435[0m[36m"[0m        [90m# AddToCartSteps.user_enter_zipcode_as(String)[0m
+    [36mAnd [0m[36mClick on shipping method dropdown[0m     [90m# AddToCartSteps.click_on_shipping_method_dropdown()[0m
+    [36mAnd [0m[36mSelects "[0m[36m[1mRush[0m[36m" as the shipping method[0m [90m# AddToCartSteps.selects_as_the_shipping_method(String)[0m
+    [36mAnd [0m[36mClick on the paypal checkout button[0m   [90m# AddToCartSteps.click_on_the_paypal_checkout_button()[0m
+    [36mThen [0m[36mPaypal checkout page should open[0m     [90m# AddToCartSteps.paypal_checkout_page_should_open()[0m
+Feature: Lord and Taylor Checkout Functionality
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify item added is displayed the same in the Shipping & Billing page [90m# checkoutFunctionality.feature:20[0m
+    [32mAnd [0m[32mClick on the checkout button[0m                                                  [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [32mAnd [0m[32mclick on the checkout as guest button[0m                                         [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [32mThen [0m[32mShipping and billing page should display[0m                                     [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [32mAnd [0m[32mUser should see the same product name that was added to the cart[0m              [90m# CheckoutSteps.user_should_see_the_same_product_name_that_was_added_to_the_cart()[0m
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 4. Verify the Payment type options in the Shipping & Billing page [90m# checkoutFunctionality.feature:45[0m
+    [32mAnd [0m[32mClick on the checkout button[0m                                          [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [32mAnd [0m[32mclick on the checkout as guest button[0m                                 [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [32mThen [0m[32mShipping and billing page should display[0m                             [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [32mWhen [0m[32mUser enter Shipping details as[0m                                       [90m# CheckoutSteps.user_enter_Shipping_details_as(DataTable)[0m
+    [31mAnd [0m[31mClick the Continue Checkout button[0m                                    [90m# CheckoutSteps.click_the_Continue_Checkout_button()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@id='jsUseEntered']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 5180, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: ad51d1a6-c130-4699-9563-fd8e289d3100
+      *** Element info: {Using=xpath, value=//button[@id='jsUseEntered']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.CheckoutController.clickCheckout(CheckoutController.java:70)
+      	at com.lordAndTaylor.qa.scripts.steps.CheckoutSteps.click_the_Continue_Checkout_button(CheckoutSteps.java:41)
+      	at ✽.And Click the Continue Checkout button(checkoutFunctionality.feature:51)
+      [0m
+    [36mAnd [0m[36mClick on the use address as entered button[0m                            [90m# CheckoutSteps.click_on_the_use_address_as_entered_button()[0m
+    [36mAnd [0m[36mClick on the payment dropdown in the payments section[0m                 [90m# CheckoutSteps.click_on_the_payment_dropdown_in_the_payments_section()[0m
+    [36mThen [0m[36mUser should see the following payment options[0m                        [90m# CheckoutSteps.user_should_see_the_following_payment_options(DataTable)[0m
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 6. Verify the Error Message for an invalid credit card [90m# checkoutFunctionality.feature:76[0m
+    [32mAnd [0m[32mClick on the checkout button[0m                               [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [32mAnd [0m[32mclick on the checkout as guest button[0m                      [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [32mThen [0m[32mShipping and billing page should display[0m                  [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [32mWhen [0m[32mUser enter Shipping details as[0m                            [90m# CheckoutSteps.user_enter_Shipping_details_as(DataTable)[0m
+    [31mAnd [0m[31mClick the Continue Checkout button[0m                         [90m# CheckoutSteps.click_the_Continue_Checkout_button()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@id='jsUseEntered']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 8364, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 77f80899-dfce-4f4e-9789-73f94d98d294
+      *** Element info: {Using=xpath, value=//button[@id='jsUseEntered']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.CheckoutController.clickCheckout(CheckoutController.java:70)
+      	at com.lordAndTaylor.qa.scripts.steps.CheckoutSteps.click_the_Continue_Checkout_button(CheckoutSteps.java:41)
+      	at ✽.And Click the Continue Checkout button(checkoutFunctionality.feature:82)
+      [0m
+    [36mAnd [0m[36mClick on the use address as entered button[0m                 [90m# CheckoutSteps.click_on_the_use_address_as_entered_button()[0m
+    [36mAnd [0m[36mClick on the payment dropdown in the payments section[0m      [90m# CheckoutSteps.click_on_the_payment_dropdown_in_the_payments_section()[0m
+    [36mAnd [0m[36mUser selects "[0m[36m[1mVisa[0m[36m" as the payment type[0m                    [90m# CheckoutSteps.user_selects_as_the_payment_type(String)[0m
+    [36mAnd [0m[36mProvides the following card information[0m                    [90m# CheckoutSteps.provides_the_following_card_information(DataTable)[0m
+    [36mAnd [0m[36mClick the continue Checkout[0m                                [90m# CheckoutSteps.click_the_continue_Checkout()[0m
+    [36mThen [0m[36mUser should see Invalid card error message[0m                [90m# CheckoutSteps.user_should_see_Invalid_card_error_message()[0m
+Feature: Lord and Taylor Checkout Functionality
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10912, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: c38ab6ca-0c56-4e71-8ac7-93d17964644c
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(checkoutFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [36mAnd [0m[36mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [36mThen [0m[36mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [36mWhen [0m[36mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [36mThen [0m[36mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [36mWhen [0m[36mUser click on "[0m[36m[1mMica Blue[0m[36m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [36mAnd [0m[36mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [36mAnd [0m[36mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [36mWhen [0m[36mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify item added is displayed the same in the Shipping & Billing page [90m# checkoutFunctionality.feature:20[0m
+    [36mAnd [0m[36mClick on the checkout button[0m                                                  [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [36mAnd [0m[36mclick on the checkout as guest button[0m                                         [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [36mThen [0m[36mShipping and billing page should display[0m                                     [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [36mAnd [0m[36mUser should see the same product name that was added to the cart[0m              [90m# CheckoutSteps.user_should_see_the_same_product_name_that_was_added_to_the_cart()[0m
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser click on "[0m[32m[1mMica Blue[0m[32m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [32mAnd [0m[32mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [32mAnd [0m[32mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [32mWhen [0m[32mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 4. Verify the Payment type options in the Shipping & Billing page [90m# checkoutFunctionality.feature:45[0m
+    [32mAnd [0m[32mClick on the checkout button[0m                                          [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [32mAnd [0m[32mclick on the checkout as guest button[0m                                 [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [32mThen [0m[32mShipping and billing page should display[0m                             [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [32mWhen [0m[32mUser enter Shipping details as[0m                                       [90m# CheckoutSteps.user_enter_Shipping_details_as(DataTable)[0m
+    [31mAnd [0m[31mClick the Continue Checkout button[0m                                    [90m# CheckoutSteps.click_the_Continue_Checkout_button()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@id='jsUseEntered']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10652, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 2444fbff-6cb3-4328-bbce-46df0e1db8c4
+      *** Element info: {Using=xpath, value=//button[@id='jsUseEntered']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.CheckoutController.clickCheckout(CheckoutController.java:70)
+      	at com.lordAndTaylor.qa.scripts.steps.CheckoutSteps.click_the_Continue_Checkout_button(CheckoutSteps.java:41)
+      	at ✽.And Click the Continue Checkout button(checkoutFunctionality.feature:51)
+      [0m
+    [36mAnd [0m[36mClick on the use address as entered button[0m                            [90m# CheckoutSteps.click_on_the_use_address_as_entered_button()[0m
+    [36mAnd [0m[36mClick on the payment dropdown in the payments section[0m                 [90m# CheckoutSteps.click_on_the_payment_dropdown_in_the_payments_section()[0m
+    [36mThen [0m[36mUser should see the following payment options[0m                        [90m# CheckoutSteps.user_should_see_the_following_payment_options(DataTable)[0m
+
+  Background:                                                 [90m# checkoutFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated checkout Functionality[0m              [90m# CheckoutSteps.not_a_validated_checkout_Functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 9140, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: d4316e7f-b54e-4f11-ae4a-909f05d41cc1
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(checkoutFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser hover over the men section in navigation bar[0m    [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [36mAnd [0m[36mUser click on the Nike Link[0m                           [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [36mThen [0m[36mNike products page should display[0m                    [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [36mWhen [0m[36mUser click on Nike Hydroguard Mica Top product image[0m [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [36mThen [0m[36mHydroguard Mica Top Product page should display[0m      [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [36mWhen [0m[36mUser click on "[0m[36m[1mMica Blue[0m[36m" color option[0m               [90m# ProductsPageSteps.user_click_on_color_option(String)[0m
+    [36mAnd [0m[36mSelects Large as the size[0m                             [90m# ProductsPageSteps.selects_Large_as_the_size()[0m
+    [36mAnd [0m[36mClick on Add To Bag Button[0m                            [90m# AddToCartSteps.click_on_Add_To_Bag_Button()[0m
+    [36mWhen [0m[36mUser click on the View My Bag button[0m                 [90m# AddToCartSteps.user_click_on_the_View_My_Bag_button()[0m
+
+  @functional @smoke
+  Scenario: 6. Verify the Error Message for an invalid credit card [90m# checkoutFunctionality.feature:76[0m
+    [36mAnd [0m[36mClick on the checkout button[0m                               [90m# AddToCartSteps.click_on_the_checkout_button()[0m
+    [36mAnd [0m[36mclick on the checkout as guest button[0m                      [90m# AddToCartSteps.click_on_the_checkout_as_guest_button()[0m
+    [36mThen [0m[36mShipping and billing page should display[0m                  [90m# AddToCartSteps.shipping_and_billing_page_should_display()[0m
+    [36mWhen [0m[36mUser enter Shipping details as[0m                            [90m# CheckoutSteps.user_enter_Shipping_details_as(DataTable)[0m
+    [36mAnd [0m[36mClick the Continue Checkout button[0m                         [90m# CheckoutSteps.click_the_Continue_Checkout_button()[0m
+    [36mAnd [0m[36mClick on the use address as entered button[0m                 [90m# CheckoutSteps.click_on_the_use_address_as_entered_button()[0m
+    [36mAnd [0m[36mClick on the payment dropdown in the payments section[0m      [90m# CheckoutSteps.click_on_the_payment_dropdown_in_the_payments_section()[0m
+    [36mAnd [0m[36mUser selects "[0m[36m[1mVisa[0m[36m" as the payment type[0m                    [90m# CheckoutSteps.user_selects_as_the_payment_type(String)[0m
+    [36mAnd [0m[36mProvides the following card information[0m                    [90m# CheckoutSteps.provides_the_following_card_information(DataTable)[0m
+    [36mAnd [0m[36mClick the continue Checkout[0m                                [90m# CheckoutSteps.click_the_continue_Checkout()[0m
+    [36mThen [0m[36mUser should see Invalid card error message[0m                [90m# CheckoutSteps.user_should_see_Invalid_card_error_message()[0m
+Feature: Lord and Taylor Header and Footer Section Functionality
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify that Navigation Bar Menu Links are not broken               [90m# headerFooterFunctionality.feature:11[0m
+    [32mThen [0m[32mUser should have all links under Dresses Section in proper working order[0m [90m# HeaderFooterSteps.user_should_have_all_links_under_Dresses_Section_in_proper_working_order()[0m
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 3. Verify that all the options of navigation bar are displayed       [90m# headerFooterFunctionality.feature:21[0m
+    [32mThen [0m[32mUser should see all the options of navigation bar in capital letters as[0m [90m# HeaderFooterSteps.user_should_see_all_the_options_of_navigation_bar_in_capital_letters_as(DataTable)[0m
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 972, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 194aac25-d0a6-42c3-96bf-a833ddb04ca7
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(headerFooterFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 10. Verify the Link Header texts in the footer section are displayed as per business requirements [90m# headerFooterFunctionality.feature:71[0m
+    [36mThen [0m[36mUser should see the following options under Shop Lord and Taylor[0m                                     [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Shop_Lord_and_Taylor(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Stores and Corporate[0m                                      [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Stores_and_Corporate(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Shipping and Returns[0m                                      [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Shipping_and_Returns(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Lord and Taylor Credit[0m                                    [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Lord_and_Taylor_Credit(DataTable)[0m
+Feature: Lord and Taylor Header and Footer Section Functionality
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify that Navigation Bar Menu Links are not broken               [90m# headerFooterFunctionality.feature:11[0m
+    [32mThen [0m[32mUser should have all links under Dresses Section in proper working order[0m [90m# HeaderFooterSteps.user_should_have_all_links_under_Dresses_Section_in_proper_working_order()[0m
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 3. Verify that all the options of navigation bar are displayed       [90m# headerFooterFunctionality.feature:21[0m
+    [32mThen [0m[32mUser should see all the options of navigation bar in capital letters as[0m [90m# HeaderFooterSteps.user_should_see_all_the_options_of_navigation_bar_in_capital_letters_as(DataTable)[0m
+
+  Background:                                       [90m# headerFooterFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Header and Footer section[0m [90m# ApplicationSteps.not_a_validated_Header_and_Footer_section()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                    [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                     [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 6620, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 11e3e0c5-b9e6-409d-8afb-89298d1d641e
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(headerFooterFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m    [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 10. Verify the Link Header texts in the footer section are displayed as per business requirements [90m# headerFooterFunctionality.feature:71[0m
+    [36mThen [0m[36mUser should see the following options under Shop Lord and Taylor[0m                                     [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Shop_Lord_and_Taylor(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Stores and Corporate[0m                                      [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Stores_and_Corporate(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Shipping and Returns[0m                                      [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Shipping_and_Returns(DataTable)[0m
+    [36mAnd [0m[36mUser should see the following options under Lord and Taylor Credit[0m                                    [90m# HeaderFooterSteps.user_should_see_the_following_options_under_Lord_and_Taylor_Credit(DataTable)[0m
+Feature: Lord and Taylor Homepage Functionality
+
+  Background:                                    [90m# homepageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated homepage[0m               [90m# ApplicationSteps.not_a_validated_homepage()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify all the Homepage Image Links aren't broken     [90m# homepageFunctionality.feature:11[0m
+    [32mThen [0m[32mUser should get all the image links in proper working order[0m [90m# HomePageSteps.user_should_get_all_the_image_links_in_proper_working_order()[0m
+
+  Background:                                    [90m# homepageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated homepage[0m               [90m# ApplicationSteps.not_a_validated_homepage()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 2. Verify that clicking the Father's day gift guide link navigates to the appropriate page [90m# homepageFunctionality.feature:16[0m
+    [32mWhen [0m[32mUser clicks the Father's day gift guide link[0m                                                  [90m# HomePageSteps.user_clicks_the_Father_s_day_gift_guide_link()[0m
+    [32mThen [0m[32mFather's Day Gift Guide page should display[0m                                                   [90m# HomePageSteps.father_s_Day_Gift_Guide_page_should_display()[0m
+
+  Background:                                    [90m# homepageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated homepage[0m               [90m# ApplicationSteps.not_a_validated_homepage()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 4. Verify the exact discount percentage for the third advertisement banner [90m# homepageFunctionality.feature:26[0m
+    [32mThen [0m[32mUser should see the exact discount of the third advertisement banner[0m          [90m# HomePageSteps.user_should_see_the_exact_discount_of_the_third_advertisement_banner()[0m
+Feature: Lord and Taylor International Shipping Functionality
+
+  Background:                                                 [90m# internationalShipping.feature:3[0m
+    [32mGiven [0m[32mNot a validated ship to other country functionality[0m [90m# InternationalShippingSteps.not_a_validated_ship_to_other_country_functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser click on ship to country link[0m                   [90m# InternationalShippingSteps.user_click_on_ship_to_country_link()[0m
+    [32mThen [0m[32mInternational Shipping page should display[0m           [90m# InternationalShippingSteps.international_Shipping_page_should_display()[0m
+    [32mWhen [0m[32mUser selects the country as "[0m[32m[1mIndia[0m[32m"[0m                  [90m# InternationalShippingSteps.user_selects_the_country_as(String)[0m
+    [32mAnd [0m[32mUser selects the currency as "[0m[32m[1mIndian Rupee[0m[32m"[0m           [90m# InternationalShippingSteps.user_selects_the_currency_as(String)[0m
+
+  @functional @smoke
+  Scenario: 3. Verify switching to another country changes shows product price in the currency which is chosen [90m# internationalShipping.feature:26[0m
+    [32mAnd [0m[32mUser click on the international shipping save and continue button[0m                                      [90m# InternationalShippingSteps.user_click_on_the_international_shipping_save_and_continue_button()[0m
+    [32mAnd [0m[32mUser closes the pop up window[0m                                                                          [90m# InternationalShippingSteps.user_closes_the_pop_up_window()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                                                     [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                                                            [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                                                     [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [31mAnd [0m[31mUser should see the price of the products in Indian Rupee[0m                                              [90m# InternationalShippingSteps.user_should_see_the_price_of_the_products_in_Indian_Rupee()[0m
+      [31mjava.lang.AssertionError: 
+      Expected: a string containing "INR"
+           but: was "$38.00"
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+      	at com.lordAndTaylor.qa.framework.controller.InternationalShippingController.verifyProductPriceCurrency(InternationalShippingController.java:97)
+      	at com.lordAndTaylor.qa.scripts.steps.InternationalShippingSteps.user_should_see_the_price_of_the_products_in_Indian_Rupee(InternationalShippingSteps.java:69)
+      	at ✽.And User should see the price of the products in Indian Rupee(internationalShipping.feature:32)
+      [0m
+
+  Background:                                                 [90m# internationalShipping.feature:3[0m
+    [32mGiven [0m[32mNot a validated ship to other country functionality[0m [90m# InternationalShippingSteps.not_a_validated_ship_to_other_country_functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser click on ship to country link[0m                   [90m# InternationalShippingSteps.user_click_on_ship_to_country_link()[0m
+    [32mThen [0m[32mInternational Shipping page should display[0m           [90m# InternationalShippingSteps.international_Shipping_page_should_display()[0m
+    [32mWhen [0m[32mUser selects the country as "[0m[32m[1mIndia[0m[32m"[0m                  [90m# InternationalShippingSteps.user_selects_the_country_as(String)[0m
+    [32mAnd [0m[32mUser selects the currency as "[0m[32m[1mIndian Rupee[0m[32m"[0m           [90m# InternationalShippingSteps.user_selects_the_currency_as(String)[0m
+
+  @functional @smoke
+  Scenario: 4. Verify the notice in the international shipping page [90m# internationalShipping.feature:36[0m
+    [32mThen [0m[32mUser should see the following notice[0m                       [90m# InternationalShippingSteps.user_should_see_the_following_notice(DataTable)[0m
+Feature: Lord and Taylor International Shipping Functionality
+
+  Background:                                                 [90m# internationalShipping.feature:3[0m
+    [32mGiven [0m[32mNot a validated ship to other country functionality[0m [90m# InternationalShippingSteps.not_a_validated_ship_to_other_country_functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser click on ship to country link[0m                   [90m# InternationalShippingSteps.user_click_on_ship_to_country_link()[0m
+    [32mThen [0m[32mInternational Shipping page should display[0m           [90m# InternationalShippingSteps.international_Shipping_page_should_display()[0m
+    [32mWhen [0m[32mUser selects the country as "[0m[32m[1mIndia[0m[32m"[0m                  [90m# InternationalShippingSteps.user_selects_the_country_as(String)[0m
+    [32mAnd [0m[32mUser selects the currency as "[0m[32m[1mIndian Rupee[0m[32m"[0m           [90m# InternationalShippingSteps.user_selects_the_currency_as(String)[0m
+
+  @functional @smoke
+  Scenario: 3. Verify switching to another country changes shows product price in the currency which is chosen [90m# internationalShipping.feature:26[0m
+    [32mAnd [0m[32mUser click on the international shipping save and continue button[0m                                      [90m# InternationalShippingSteps.user_click_on_the_international_shipping_save_and_continue_button()[0m
+    [32mAnd [0m[32mUser closes the pop up window[0m                                                                          [90m# InternationalShippingSteps.user_closes_the_pop_up_window()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m                                                     [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                                                                            [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                                                                     [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+    [31mAnd [0m[31mUser should see the price of the products in Indian Rupee[0m                                              [90m# InternationalShippingSteps.user_should_see_the_price_of_the_products_in_Indian_Rupee()[0m
+      [31mjava.lang.AssertionError: 
+      Expected: a string containing "INR"
+           but: was "$38.00"
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+      	at com.lordAndTaylor.qa.framework.controller.InternationalShippingController.verifyProductPriceCurrency(InternationalShippingController.java:97)
+      	at com.lordAndTaylor.qa.scripts.steps.InternationalShippingSteps.user_should_see_the_price_of_the_products_in_Indian_Rupee(InternationalShippingSteps.java:69)
+      	at ✽.And User should see the price of the products in Indian Rupee(internationalShipping.feature:32)
+      [0m
+
+  Background:                                                 [90m# internationalShipping.feature:3[0m
+    [32mGiven [0m[32mNot a validated ship to other country functionality[0m [90m# InternationalShippingSteps.not_a_validated_ship_to_other_country_functionality()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                              [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                               [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 9244, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: b1976cc3-2754-4716-a696-28b0514e8d05
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(internationalShipping.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m              [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser click on ship to country link[0m                   [90m# InternationalShippingSteps.user_click_on_ship_to_country_link()[0m
+    [36mThen [0m[36mInternational Shipping page should display[0m           [90m# InternationalShippingSteps.international_Shipping_page_should_display()[0m
+    [36mWhen [0m[36mUser selects the country as "[0m[36m[1mIndia[0m[36m"[0m                  [90m# InternationalShippingSteps.user_selects_the_country_as(String)[0m
+    [36mAnd [0m[36mUser selects the currency as "[0m[36m[1mIndian Rupee[0m[36m"[0m           [90m# InternationalShippingSteps.user_selects_the_currency_as(String)[0m
+
+  @functional @smoke
+  Scenario: 4. Verify the notice in the international shipping page [90m# internationalShipping.feature:36[0m
+    [36mThen [0m[36mUser should see the following notice[0m                       [90m# InternationalShippingSteps.user_should_see_the_following_notice(DataTable)[0m
+Feature: Lord and Taylor Products Page Functionality
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 2. Verify the filter navigation bar options [90m# productsPageFunctionality.feature:18[0m
+    [32mAnd [0m[32mUser should see the following filter options[0m    [90m# ProductsPageSteps.user_should_see_the_following_filter_options(DataTable)[0m
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 6. Verify the Shop by brands functionality [90m# productsPageFunctionality.feature:43[0m
+    [32mWhen [0m[32mUser click on the Shop by brand dropdown[0m      [90m# ProductsPageSteps.user_click_on_the_Shop_by_brand_dropdown()[0m
+    [32mAnd [0m[32mSelects "[0m[32m[1mAramis[0m[32m" from the dropdown[0m             [90m# ProductsPageSteps.selects_from_the_dropdown(String)[0m
+    [31mThen [0m[31m"[0m[31m[1mARAMIS[0m[31m" product page should display[0m          [90m# ProductsPageSteps.product_page_should_display(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[@id='banner-generic']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 7376, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 869846a0-96e4-4de7-9dd5-d04dcffae28d
+      *** Element info: {Using=xpath, value=//h1[@id='banner-generic']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.verifyText(PageBaseMethods.java:75)
+      	at com.lordAndTaylor.qa.framework.controller.ProductsPageController.verifyBannerName(ProductsPageController.java:160)
+      	at com.lordAndTaylor.qa.scripts.steps.ProductsPageSteps.product_page_should_display(ProductsPageSteps.java:94)
+      	at ✽.Then "ARAMIS" product page should display(productsPageFunctionality.feature:46)
+      [0m
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10984, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 4a2f5938-9a03-47a8-a712-bce567afdae6
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(productsPageFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [36mAnd [0m[36mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [36mThen [0m[36mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 14. Verify that quantity box has a default value of 1 [90m# productsPageFunctionality.feature:96[0m
+    [36mWhen [0m[36mUser click on Nike Hydroguard Mica Top product image[0m     [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [36mThen [0m[36mHydroguard Mica Top Product page should display[0m          [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [36mWhen [0m[36mUser should see the default quantity has value one[0m       [90m# ProductsPageSteps.user_should_see_the_default_quantity_has_value_one()[0m
+Feature: Lord and Taylor Products Page Functionality
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 2. Verify the filter navigation bar options [90m# productsPageFunctionality.feature:18[0m
+    [32mAnd [0m[32mUser should see the following filter options[0m    [90m# ProductsPageSteps.user_should_see_the_following_filter_options(DataTable)[0m
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 6. Verify the Shop by brands functionality [90m# productsPageFunctionality.feature:43[0m
+    [32mWhen [0m[32mUser click on the Shop by brand dropdown[0m      [90m# ProductsPageSteps.user_click_on_the_Shop_by_brand_dropdown()[0m
+    [32mAnd [0m[32mSelects "[0m[32m[1mAramis[0m[32m" from the dropdown[0m             [90m# ProductsPageSteps.selects_from_the_dropdown(String)[0m
+    [31mThen [0m[31m"[0m[31m[1mARAMIS[0m[31m" product page should display[0m          [90m# ProductsPageSteps.product_page_should_display(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[@id='banner-generic']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10476, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: b35a2d0c-388b-4817-8186-492b1fe0476d
+      *** Element info: {Using=xpath, value=//h1[@id='banner-generic']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.verifyText(PageBaseMethods.java:75)
+      	at com.lordAndTaylor.qa.framework.controller.ProductsPageController.verifyBannerName(ProductsPageController.java:160)
+      	at com.lordAndTaylor.qa.scripts.steps.ProductsPageSteps.product_page_should_display(ProductsPageSteps.java:94)
+      	at ✽.Then "ARAMIS" product page should display(productsPageFunctionality.feature:46)
+      [0m
+
+  Background:                                              [90m# productsPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated Products Page[0m                    [90m# ProductsPageSteps.not_a_validated_Products_Page()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                           [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                            [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m           [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser hover over the men section in navigation bar[0m [90m# ProductsPageSteps.user_hover_over_the_men_section_in_navigation_bar()[0m
+    [32mAnd [0m[32mUser click on the Nike Link[0m                        [90m# ProductsPageSteps.user_click_on_the_Nike_Link()[0m
+    [32mThen [0m[32mNike products page should display[0m                 [90m# ProductsPageSteps.nike_products_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 14. Verify that quantity box has a default value of 1 [90m# productsPageFunctionality.feature:96[0m
+    [32mWhen [0m[32mUser click on Nike Hydroguard Mica Top product image[0m     [90m# ProductsPageSteps.user_click_on_Nike_Hydroguard_Mica_Top_product_image()[0m
+    [32mThen [0m[32mHydroguard Mica Top Product page should display[0m          [90m# ProductsPageSteps.hydroguard_Mica_Top_Product_page_should_display()[0m
+    [32mWhen [0m[32mUser should see the default quantity has value one[0m       [90m# ProductsPageSteps.user_should_see_the_default_quantity_has_value_one()[0m
+Feature: Lord and Taylor Register User Page Functionality
+
+  Background:                                                   [90m# registerUserFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                                  [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                 [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the login link[0m                          [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [32mThen [0m[32mLord and Taylor Login page should display[0m              [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the Create Account link[0m                 [90m# RegisterUserPageSteps.user_clicks_on_the_Create_Account_link()[0m
+    [32mThen [0m[32mLord and Taylor Create New Account page should display[0m [90m# RegisterUserPageSteps.lord_and_Taylor_Create_New_Account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. New User Registration with all fields having valid data [90m# registerUserFunctionality.feature:15[0m
+    [32mWhen [0m[32mUser enter all the fields with valid data[0m                     [90m# RegisterUserPageSteps.user_enter_all_the_fields_with_valid_data(DataTable)[0m
+    [32mAnd [0m[32mClick on the create account button[0m                             [90m# RegisterUserPageSteps.click_on_the_create_account_button()[0m
+    [32mThen [0m[32mRegistration welcome message should display[0m                   [90m# RegisterUserPageSteps.registration_welcome_message_should_display()[0m
+
+  Background:                                                   [90m# registerUserFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                                  [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                                [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                                 [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m                [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the login link[0m                          [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [32mThen [0m[32mLord and Taylor Login page should display[0m              [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the Create Account link[0m                 [90m# RegisterUserPageSteps.user_clicks_on_the_Create_Account_link()[0m
+    [32mThen [0m[32mLord and Taylor Create New Account page should display[0m [90m# RegisterUserPageSteps.lord_and_Taylor_Create_New_Account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 4. New User Registration with different password and confirm password fields [90m# registerUserFunctionality.feature:39[0m
+    [32mWhen [0m[32mUser enter different password and confirm password fields[0m                       [90m# RegisterUserPageSteps.user_enter_different_password_and_confirm_password_fields(DataTable)[0m
+    [32mAnd [0m[32mClick on the create account button[0m                                               [90m# RegisterUserPageSteps.click_on_the_create_account_button()[0m
+    [32mThen [0m[32mPassword error message should display[0m                                           [90m# RegisterUserPageSteps.password_error_message_should_display()[0m
+Feature: Lord and Taylor Search Box Functionality
+
+  Background:                                    [90m# searchBoxFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated search box[0m             [90m# SearchBoxSteps.not_a_validated_search_box()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify Search Functionality                                                         [90m# searchBoxFunctionality.feature:11[0m
+    [32mWhen [0m[32mUser enters as "[0m[32m[1mMen's Nike Air[0m[32m" in the search box[0m                                         [90m# SearchBoxSteps.user_enters_as_in_the_search_box(String)[0m
+    [32mAnd [0m[32mUser clicks on search button[0m                                                               [90m# SearchBoxSteps.user_clicks_on_search_button()[0m
+    [32mThen [0m[32mUser should see Search page header containing the same text that is entered in search box[0m [90m# SearchBoxSteps.user_should_see_Search_page_header_containing_the_same_text_that_is_entered_in_search_box()[0m
+    [32mAnd [0m[32mUser should see the following six items[0m                                                    [90m# SearchBoxSteps.user_should_see_the_following_six_items(DataTable)[0m
+
+  Background:                                    [90m# searchBoxFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated search box[0m             [90m# SearchBoxSteps.not_a_validated_search_box()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 8. Verify Search box functionality with search keyword containing spaces in between [90m# searchBoxFunctionality.feature:83[0m
+    [32mWhen [0m[32mUser enters "[0m[32m[1mN i k e A i r[0m[32m" with spaces in between characters in the search box[0m        [90m# SearchBoxSteps.user_enters_with_spaces_in_between_characters_in_the_search_box(String)[0m
+    [32mAnd [0m[32mUser clicks on dropdown box button[0m                                                      [90m# SearchBoxSteps.user_clicks_on_dropdown_box_button()[0m
+    [32mAnd [0m[32mUser select "[0m[32m[1mKids[0m[32m" from Dropdown option[0m                                                 [90m# SearchBoxSteps.user_select_from_Dropdown_option(String)[0m
+    [32mAnd [0m[32mUser clicks on search button[0m                                                            [90m# SearchBoxSteps.user_clicks_on_search_button()[0m
+    [31mThen [0m[31mUser should see a No Results Found message[0m                                             [90m# SearchBoxSteps.user_should_see_a_No_Results_Found_message()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@id='no-results-msg']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 8784, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 8990f458-d8ab-46cf-ad10-c16022509cb4
+      *** Element info: {Using=xpath, value=//span[@id='no-results-msg']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.verifyTextIsPresent(PageBaseMethods.java:91)
+      	at com.lordAndTaylor.qa.framework.controller.SearchBoxController.verifyInvalidSearchErrorMessage(SearchBoxController.java:108)
+      	at com.lordAndTaylor.qa.scripts.steps.SearchBoxSteps.user_should_see_a_No_Results_Found_message(SearchBoxSteps.java:79)
+      	at ✽.Then User should see a No Results Found message(searchBoxFunctionality.feature:88)
+      [0m
+Feature: Lord and Taylor Search Box Functionality
+
+  Background:                                    [90m# searchBoxFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated search box[0m             [90m# SearchBoxSteps.not_a_validated_search_box()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 1. Verify Search Functionality                                                         [90m# searchBoxFunctionality.feature:11[0m
+    [32mWhen [0m[32mUser enters as "[0m[32m[1mMen's Nike Air[0m[32m" in the search box[0m                                         [90m# SearchBoxSteps.user_enters_as_in_the_search_box(String)[0m
+    [32mAnd [0m[32mUser clicks on search button[0m                                                               [90m# SearchBoxSteps.user_clicks_on_search_button()[0m
+    [32mThen [0m[32mUser should see Search page header containing the same text that is entered in search box[0m [90m# SearchBoxSteps.user_should_see_Search_page_header_containing_the_same_text_that_is_entered_in_search_box()[0m
+    [32mAnd [0m[32mUser should see the following six items[0m                                                    [90m# SearchBoxSteps.user_should_see_the_following_six_items(DataTable)[0m
+
+  Background:                                    [90m# searchBoxFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated search box[0m             [90m# SearchBoxSteps.not_a_validated_search_box()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2312, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 3f09e5a5-9d0e-4e2f-a5b5-d990358012b2
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(searchBoxFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  #Extra product - Air Max I Ultra 2.0 Essential Sneakers |
+  @functional @smoke
+  Scenario: 2. Verify invalid search query          [90m# searchBoxFunctionality.feature:21[0m
+    [36mWhen [0m[36mUser enters as "[0m[36m[1mxxxx[0m[36m" in the search box[0m    [90m# SearchBoxSteps.user_enters_as_in_the_search_box(String)[0m
+    [36mAnd [0m[36mUser clicks on search button[0m                [90m# SearchBoxSteps.user_clicks_on_search_button()[0m
+    [36mThen [0m[36mUser should see a No Results Found message[0m [90m# SearchBoxSteps.user_should_see_a_No_Results_Found_message()[0m
+
+  Background:                                    [90m# searchBoxFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated search box[0m             [90m# SearchBoxSteps.not_a_validated_search_box()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                 [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                  [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10412, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: cdc34ef0-3394-45b5-b9ec-6c8ecbadc598
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(searchBoxFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+
+  @functional @smoke
+  Scenario: 8. Verify Search box functionality with search keyword containing spaces in between [90m# searchBoxFunctionality.feature:84[0m
+    [36mWhen [0m[36mUser enters "[0m[36m[1mN i k e A i r[0m[36m" with spaces in between characters in the search box[0m        [90m# SearchBoxSteps.user_enters_with_spaces_in_between_characters_in_the_search_box(String)[0m
+    [36mAnd [0m[36mUser clicks on dropdown box button[0m                                                      [90m# SearchBoxSteps.user_clicks_on_dropdown_box_button()[0m
+    [36mAnd [0m[36mUser select "[0m[36m[1mKids[0m[36m" from Dropdown option[0m                                                 [90m# SearchBoxSteps.user_select_from_Dropdown_option(String)[0m
+    [36mAnd [0m[36mUser clicks on search button[0m                                                            [90m# SearchBoxSteps.user_clicks_on_search_button()[0m
+    [36mThen [0m[36mUser should see a No Results Found message[0m                                             [90m# SearchBoxSteps.user_should_see_a_No_Results_Found_message()[0m
+Feature: Lord and Taylor Sign In Page Functionality
+
+  @functional @smoke
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:13[0m
+    [36mWhen [0m[36mUser enter user email as "<EmailAddress>"[0m
+    [36mAnd [0m[36mUser enter user password as "<Password>"[0m
+    [36mAnd [0m[36mUser clicks on login button[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m
+    [36mAnd [0m[36mLogin welcome message should display[0m
+
+    Examples: 
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 8428, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 8710c45e-fbc8-4906-a1b0-59cbc5d5d14e
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(signInFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @smoke @functional
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:21[0m
+    [36mWhen [0m[36mUser enter user email as "[0m[36m[1mdebajyoti90000@gmail.com[0m[36m"[0m        [90m# SignInPageSteps.user_enter_user_email_as(String)[0m
+    [36mAnd [0m[36mUser enter user password as "[0m[36m[1mSelenium0119!![0m[36m"[0m                [90m# SignInPageSteps.user_enter_user_password_as(String)[0m
+    [36mAnd [0m[36mUser clicks on login button[0m                                 [90m# SignInPageSteps.user_clicks_on_login_button()[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m           [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+    [36mAnd [0m[36mLogin welcome message should display[0m                        [90m# UserAccountPageSteps.login_welcome_message_should_display()[0m
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [32mThen [0m[32mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @smoke @functional
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:22[0m
+    [32mWhen [0m[32mUser enter user email as "[0m[32m[1mdebajyoti199000@gmail.com[0m[32m"[0m       [90m# SignInPageSteps.user_enter_user_email_as(String)[0m
+    [32mAnd [0m[32mUser enter user password as "[0m[32m[1mShiftqa0119!![0m[32m"[0m                 [90m# SignInPageSteps.user_enter_user_password_as(String)[0m
+    [32mAnd [0m[32mUser clicks on login button[0m                                 [90m# SignInPageSteps.user_clicks_on_login_button()[0m
+    [32mThen [0m[32mLord and Taylor User account page should display[0m           [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+    [32mAnd [0m[32mLogin welcome message should display[0m                        [90m# UserAccountPageSteps.login_welcome_message_should_display()[0m
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10748, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 487446a1-0094-4c17-8389-00a767bc07b3
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(signInFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 3. Valid username with missing password [90m# signInFunctionality.feature:37[0m
+    [36mWhen [0m[36mUser login with email and password[0m         [90m# SignInPageSteps.user_login_with_email_and_password(DataTable)[0m
+    [36mThen [0m[36mMissing error message should display[0m       [90m# SignInPageSteps.missing_error_message_should_display()[0m
+Feature: Lord and Taylor Sign In Page Functionality
+
+  @functional @smoke
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:13[0m
+    [36mWhen [0m[36mUser enter user email as "<EmailAddress>"[0m
+    [36mAnd [0m[36mUser enter user password as "<Password>"[0m
+    [36mAnd [0m[36mUser clicks on login button[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m
+    [36mAnd [0m[36mLogin welcome message should display[0m
+
+    Examples: 
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [32mThen [0m[32mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @smoke @functional
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:21[0m
+    [32mWhen [0m[32mUser enter user email as "[0m[32m[1mdebajyoti90000@gmail.com[0m[32m"[0m        [90m# SignInPageSteps.user_enter_user_email_as(String)[0m
+    [32mAnd [0m[32mUser enter user password as "[0m[32m[1mSelenium0119!![0m[32m"[0m                [90m# SignInPageSteps.user_enter_user_password_as(String)[0m
+    [32mAnd [0m[32mUser clicks on login button[0m                                 [90m# SignInPageSteps.user_clicks_on_login_button()[0m
+    [32mThen [0m[32mLord and Taylor User account page should display[0m           [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+    [32mAnd [0m[32mLogin welcome message should display[0m                        [90m# UserAccountPageSteps.login_welcome_message_should_display()[0m
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 10628, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: dbf71988-76ed-42da-894e-e62877580b39
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(signInFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @smoke @functional
+  Scenario Outline: 1. Login with valid username and valid password [90m# signInFunctionality.feature:22[0m
+    [36mWhen [0m[36mUser enter user email as "[0m[36m[1mdebajyoti199000@gmail.com[0m[36m"[0m       [90m# SignInPageSteps.user_enter_user_email_as(String)[0m
+    [36mAnd [0m[36mUser enter user password as "[0m[36m[1mShiftqa0119!![0m[36m"[0m                 [90m# SignInPageSteps.user_enter_user_password_as(String)[0m
+    [36mAnd [0m[36mUser clicks on login button[0m                                 [90m# SignInPageSteps.user_clicks_on_login_button()[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m           [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+    [36mAnd [0m[36mLogin welcome message should display[0m                        [90m# UserAccountPageSteps.login_welcome_message_should_display()[0m
+
+  Background:                                      [90m# signInFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                     [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                   [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                    [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 1108, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 10117ee2-075b-494f-aa57-81873f5df2ae
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(signInFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m   [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m             [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 3. Valid username with missing password [90m# signInFunctionality.feature:37[0m
+    [36mWhen [0m[36mUser login with email and password[0m         [90m# SignInPageSteps.user_login_with_email_and_password(DataTable)[0m
+    [36mThen [0m[36mMissing error message should display[0m       [90m# SignInPageSteps.missing_error_message_should_display()[0m
+Feature: Lord and Taylor User Account Page Functionality
+
+  Background:                                             [90m# userAccountPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                            [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                          [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                           [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 4248, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 0eb736b1-9e4d-4903-afda-578b4742796e
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(userAccountPageFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m          [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m                    [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m        [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [36mWhen [0m[36mUser login with valid credentials[0m                [90m# SignInPageSteps.user_login_with_valid_credentials()[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 5. Verify that the States dropdown box in Add Shipping Address field is in alphabetical order [90m# userAccountPageFunctionality.feature:46[0m
+    [36mWhen [0m[36mUser clicks the shipping address navigation bar link[0m                                             [90m# UserAccountPageSteps.user_clicks_the_shipping_address_navigation_bar_link()[0m
+    [36mAnd [0m[36mUser clicks the add shipping address link[0m                                                         [90m# UserAccountPageSteps.user_clicks_the_add_shipping_address_link()[0m
+    [36mThen [0m[36mUser should see the states dropdown menu options in alphabetical order[0m                           [90m# UserAccountPageSteps.user_should_see_the_states_dropdown_menu_options_in_alphabetical_order()[0m
+
+  Background:                                             [90m# userAccountPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                            [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                          [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [32mAnd [0m[32mCloses the Popup window[0m                           [90m# HomePageSteps.closes_the_Popup_window()[0m
+    [32mThen [0m[32mLord and Taylor Homepage should display[0m          [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [32mWhen [0m[32mUser clicks on the login link[0m                    [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [32mThen [0m[32mLord and Taylor Login page should display[0m        [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [32mWhen [0m[32mUser login with valid credentials[0m                [90m# SignInPageSteps.user_login_with_valid_credentials()[0m
+    [32mThen [0m[32mLord and Taylor User account page should display[0m [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 7. Verify the Order History Message for new account holders who hasn't placed an order yet [90m# userAccountPageFunctionality.feature:58[0m
+    [32mAnd [0m[32mUser clicks the Order History link[0m                                                             [90m# UserAccountPageSteps.user_clicks_the_Order_History_link()[0m
+    [32mThen [0m[32mThe following order history message should display[0m                                            [90m# UserAccountPageSteps.the_following_order_history_message_should_display(DataTable)[0m
+Feature: Lord and Taylor User Account Page Functionality
+
+  Background:                                             [90m# userAccountPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                            [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                          [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                           [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 8560, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 6a818dfd-fbf6-4fa5-a5d2-c8b377e69184
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(userAccountPageFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m          [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m                    [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m        [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [36mWhen [0m[36mUser login with valid credentials[0m                [90m# SignInPageSteps.user_login_with_valid_credentials()[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 5. Verify that the States dropdown box in Add Shipping Address field is in alphabetical order [90m# userAccountPageFunctionality.feature:46[0m
+    [36mWhen [0m[36mUser clicks the shipping address navigation bar link[0m                                             [90m# UserAccountPageSteps.user_clicks_the_shipping_address_navigation_bar_link()[0m
+    [36mAnd [0m[36mUser clicks the add shipping address link[0m                                                         [90m# UserAccountPageSteps.user_clicks_the_add_shipping_address_link()[0m
+    [36mThen [0m[36mUser should see the states dropdown menu options in alphabetical order[0m                           [90m# UserAccountPageSteps.user_should_see_the_states_dropdown_menu_options_in_alphabetical_order()[0m
+
+  Background:                                             [90m# userAccountPageFunctionality.feature:3[0m
+    [32mGiven [0m[32mNot a validated user[0m                            [90m# ApplicationSteps.not_a_validated_user()[0m
+    [32mWhen [0m[32mUser browse to the site[0m                          [90m# ApplicationSteps.user_browse_to_the_site()[0m
+    [31mAnd [0m[31mCloses the Popup window[0m                           [90m# HomePageSteps.closes_the_Popup_window()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id='close-button']
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+      System info: host: 'DEBAJYOTI', ip: '192.168.1.209', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 9588, moz:profile: C:\Users\DEBAJY~1\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.3, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: b22b1384-60b9-4424-9f55-df8567dc9e2c
+      *** Element info: {Using=xpath, value=//div[@id='close-button']}
+      	at sun.reflect.GeneratedConstructorAccessor78.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at com.lordAndTaylor.qa.framework.controller.PageBaseMethods.clickElement(PageBaseMethods.java:63)
+      	at com.lordAndTaylor.qa.framework.controller.HomePageController.closeEmailPopUp(HomePageController.java:33)
+      	at com.lordAndTaylor.qa.scripts.steps.HomePageSteps.closes_the_Popup_window(HomePageSteps.java:13)
+      	at ✽.And Closes the Popup window(userAccountPageFunctionality.feature:6)
+      [0m
+    [36mThen [0m[36mLord and Taylor Homepage should display[0m          [90m# HomePageSteps.lord_and_Taylor_Homepage_should_display()[0m
+    [36mWhen [0m[36mUser clicks on the login link[0m                    [90m# HomePageSteps.user_clicks_on_the_login_link()[0m
+    [36mThen [0m[36mLord and Taylor Login page should display[0m        [90m# SignInPageSteps.lord_and_Taylor_Login_page_should_display()[0m
+    [36mWhen [0m[36mUser login with valid credentials[0m                [90m# SignInPageSteps.user_login_with_valid_credentials()[0m
+    [36mThen [0m[36mLord and Taylor User account page should display[0m [90m# UserAccountPageSteps.lord_and_Taylor_User_account_page_should_display()[0m
+
+  @functional @smoke
+  Scenario: 7. Verify the Order History Message for new account holders who hasn't placed an order yet [90m# userAccountPageFunctionality.feature:58[0m
+    [36mAnd [0m[36mUser clicks the Order History link[0m                                                             [90m# UserAccountPageSteps.user_clicks_the_Order_History_link()[0m
+    [36mThen [0m[36mThe following order history message should display[0m                                            [90m# UserAccountPageSteps.the_following_order_history_message_should_display(DataTable)[0m
