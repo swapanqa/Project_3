@@ -28,8 +28,8 @@ import org.testng.annotations.Test;
         tags = { "@smoke","@functional" },  /* debug and smoke test */
         //tags = {"~@ignored"},
         //monochrome = true,
-        strict = true,
-        format = {"json:target/cucumber-parallel/1.json", "html:target/cucumber-parallel/1.html", "pretty"},
+        //strict = true,
+        //format = {"json:target/cucumber-parallel/1.json", "html:target/cucumber-parallel/1.html", "pretty"},
         //features = {
                     //"classpath:features/addToCartFunctionality.feature",
                     //"src/test/Resources/features/addToCartFunctionality.feature",
