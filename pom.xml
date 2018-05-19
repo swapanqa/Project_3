@@ -220,6 +220,7 @@
                     <executable>C:\Program Files\Java\jdk1.8.0_161\bin\javac</executable>
                     -->
                     <!-- Change path based on different computer -->
+                    <!-- Comment out "fork" and "executable" tags while running on Shift's jenkins (Uncomment for local jenkins) -->
 
                 </configuration>
             </plugin>
