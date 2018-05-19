@@ -43,7 +43,7 @@ import org.testng.annotations.Test;
                     //"src/test/Resources/features/signInFunctionality.feature",
                     //"src/test/Resources/features/userAccountPageFunctionality.feature",
         //            },
-        features = {"src/test/resources/features/"},
+        features = {"src/test/Resources/features/"},
         glue = {
                 "com.lordAndTaylor.qa.scripts.steps",
                 "com.lordAndTaylor.qa.framework.hooks"
