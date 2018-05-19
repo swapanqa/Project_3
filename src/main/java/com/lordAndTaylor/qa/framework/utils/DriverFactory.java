@@ -14,9 +14,20 @@ public class DriverFactory {
 
     private static DriverFactory instance = null;
 
-    public static final String USERNAME = "debajyotipaul2";
-    public static final String AUTOMATE_KEY = "XEAzhKygB3e5VEDbJGUE";
+    public static final String USERNAME = "debajyotipaul4";
+    public static final String AUTOMATE_KEY = "y9KqAgALeoFMRE13fUWa";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+/*
+    public static final String USERNAME = "debajyotipaul5";
+    public static final String AUTOMATE_KEY = "UnysG36SjRpKWPxzU52K";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+    public static final String USERNAME = "debajyotipaul6";
+    public static final String AUTOMATE_KEY = "uUS23VsyScB1hAsyXtNq";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+*/
 
     // For running on grid with Shift's server -- Node as my computer(local machine) and hub as shift's server
 //     public static final String LOCAL_GRID_URL = "http://10.10.20.70:4444/wd/hub";
